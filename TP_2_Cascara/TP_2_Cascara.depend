@@ -17,3 +17,20 @@
 	<ctype.h>
 	<string.h>
 
+1525462984 source:c:\users\mati\desktop\tps 2do cuatri\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	<conio.h>
+	<string.h>
+
+1525462107 c:\users\mati\desktop\tps 2do cuatri\tp_2_cascara\funciones.h
+
+1525462882 source:c:\users\mati\desktop\tps 2do cuatri\tp_2_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	<conio.h>
+	<string.h>
+	<ctype.h>
+

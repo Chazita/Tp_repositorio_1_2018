@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include "funciones.h"
 #include <conio.h>
-#include <ctype.h>
 #include <string.h>
+#include <ctype.h>
 
 void inicializarEstado(ePersona personas[],int TAM)
 {
@@ -179,3 +179,22 @@ void graficoDatos(ePersona lista[], int menor18,int de19a35, int mayorDe35,int t
     printf("--------------------");
     printf("\n  |<18\t19-35\t>35");
 }
+void inicializarDatos(ePersona lista[], int TAM) //Se hardcodean para facilitar el testeo del programador.
+{
+    char nombre[][50]= {"Roberto","Marcela","Julian","Tomas","Agustin","Augusto","Luna","Chiara","Florencia","Sofia","Julieta","Sofia","Luna","Matias","Juan Pablo","Rigoberto","Roberta","Roberto","Saturnino","Mariana"};
+    float edad[]= {18,20,7,52,52,61,12,2,13,25,24,38,65,5,18,89,2,20,60,90};
+    int estado[]= {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+    int dni[]= {123,312,142,1232,5125,5123,5123,5634,6757,85467,4235,342534,34253245,346346,23462346,34263246,23463426,23462346,23462346,5473457};
+
+    int i;
+
+    for(i=0; i<TAM; i++)
+    {
+        lista[i].dni = dni[i];
+        lista[i].edad = edad[i];
+        lista[i].estado = estado[i];
+        strcpy(lista[i].nombre,nombre[i]);
+    }
+
+}
+

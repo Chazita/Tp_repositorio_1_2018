@@ -68,4 +68,10 @@ void ordenar(ePersona [],int);
  * @param tamanio del array.
  */
 void graficoDatos(ePersona [],int ,int,int,int,int);
+
+/** Inicializa el vector para no tener que ingresar datos para el testeo.
+ * \param El vector de personas
+ * \param El tamaño del vector
+ */
+void inicializarDatos(ePersona lista[], int TAM);
 #endif // FUNCIONES_H_INCLUDED

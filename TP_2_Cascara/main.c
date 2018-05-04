@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include "funciones.h"
 #include <conio.h>
-#include <ctype.h>
 #include <string.h>
-#define TAM 20
 
 int main()
 {
+    int TAM = 20; //El codeblocks no compila cuando pongo define!
     int index,dniBuscar,indexBorrar;
     int menor18,de19a35,mayorDe35,total;
-    ePersona personas[20];
+    ePersona personas[TAM];
     char seguir='s';
+   // inicializarDatos(personas,TAM);
     int opcion=0;
 
     while(seguir=='s')
@@ -70,6 +70,10 @@ int main()
                 break;
             case 5:
                 seguir = 'n';
+                break;
+            default:
+                printf("Opcion incorrecta ingrese opcion correcta");
+                system("pause");
                 break;
         }
     system("cls");
